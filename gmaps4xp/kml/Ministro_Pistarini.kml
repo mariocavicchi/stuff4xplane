@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+	<name>BuenoAries.kml</name>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Poligono senza titolo</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+-58.5569578773986,-34.81517066575311,0 -58.55830636988809,-34.82030024300508,0 -58.54539609754758,-34.82278625278369,0 -58.55144373683088,-34.82782749099174,0 -58.54644626019517,-34.83124820953523,0 -58.53863025382227,-34.82424199031759,0 -58.53248910044938,-34.82518593579452,0 -58.52728775717934,-34.83621809428564,0 -58.52207944364604,-34.83579298271557,0 -58.52461353066239,-34.82666617296704,0 -58.51767858490362,-34.82677455338753,0 -58.51673464012235,-34.82206743945334,0 -58.52731789746639,-34.82025348938046,0 -58.53259850568204,-34.80525420640897,0 -58.53700645139709,-34.80515494227841,0 -58.5427982612125,-34.80473778506482,0 -58.54643240003715,-34.81688904897349,0 -58.5569578773986,-34.81517066575311,0 </coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

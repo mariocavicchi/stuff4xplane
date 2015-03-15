@@ -1,0 +1,46 @@
+LICENSE and READ ME
+
+WHAT IS IT?
+
+Glider Box-Trailer Objects for incorporation in X-Plane Scenery.
+
+
+WHAT CAN I DO WITH THESE?  (LICENSE)
+
+Incorporate some or all of them in your Freeware* custom X-Plane scenery package.
+
+*No part of any artwork and/or texture may be incorporated in any commercial product.
+
+Modify the objects and/or texture file to suit your scenery requirements.
+
+Author attribution is not required.
+
+You may redistribute modified objects and textures as a library package only under
+the same conditions as this same license.
+
+Copyright: vonhinx 2012
+Contact: PM me at the x-plane.org forum.
+
+
+NOTES:
+
+These are pretty lossy but not extremely so.  Double the texture size and repaint
+if you want higher detail.
+
+Four basic shapes are included in this package, each textured to two different,
+one-sided liveries, for a total of eight different box trailers.
+
+A limited 512 x 512 px 'paint-kit' file is included, with some free space if you want
+to have double-sided vertical stab markings.
+
+Each object is split into two LOD groups: Main trailer boxes appear at less than
+1.5kms, with more detailed objects appearing at less than 500 meters.
+
+Each object comes with the TILTED command but not set for any angle limit.
+
+
+INSTRUCTIONS:
+
+Drop the 'trailers' folder or any objects and two texture files (.png and .dds) into
+your scenery's 'objects' folder.  Place each box trailer in your scenery using WED
+or Overlay Editor.

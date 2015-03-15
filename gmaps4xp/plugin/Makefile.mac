@@ -1,0 +1,38 @@
+SDK=./SDK
+ 
+TARGET=gmaps.xpl
+HEADERS=$(wildcard *.h)
+SOURCES=$(wildcard *.cpp)
+OBJECTS=$(SOURCES:.cpp=.o)
+ 
+
+DEFS= -DAPL=1 -fPIC -m32 -fno-stack-protector -DXPLM200 -ggdb
+ 
+CXXFLAGS+=-Wall -I$(SDK)/CHeaders/XPLM -I$(SDK)/CHeaders/Widgets $(DEFS) 
+ 
+# XPLM is loaded dynamically on OS X hence the -undefined option, -dynamiclib is used to get a .a file instead of a .bundle
+# The magi? incantation is -undefined warning -flat_namespace -dynamiclib -shared -rdynamic -nodefaultlibs,
+# -m32 is to force 32bit since recent OS X is mostly 64bit AND it will build 64bit by default
+
+LNFLAGS+=-undefined warning -flat_namespace -dynamiclib -shared -rdynamic -nodefaultlibs -m32 -ggdb
+# Math libs
+LIBS+=-lm
+LIBS+=-ljpeg
+LIBS+=-lcurl
+LIBS+=-lpthread
+ 
+all: $(TARGET)
+ 
+.cpp.o:
+	$(CXX) $(CXXFLAGS) -c $<
+ 
+$(TARGET): $(OBJECTS)
+	$(CXX) -o $(TARGET) $(LNFLAGS) $(OBJECTS) $(LIBS)
+ 
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+ 
+install: $(TARGET)
+	cp -f $(TARGET) $(PLUGINS)
+ 
+ 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+	<name>Manhattan.kml</name>
+	<StyleMap id="msn_ylw-pushpin120">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin05</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin13</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin05">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin13">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Manhattan</name>
+		<styleUrl>#msn_ylw-pushpin120</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+-74.01220089132732,40.69664520090492,0 -73.99560004801269,40.70587411613321,0 -73.97230455778288,40.71042026677996,0 -73.96422078636624,40.74905893467032,0 -73.93904319448185,40.77772356321765,0 -73.93742048037362,40.7848917929078,0 -73.92724519968529,40.79660434443909,0 -73.92839322010281,40.80272590192504,0 -73.93323835123755,40.80884906932305,0 -73.93438141576615,40.83220769933465,0 -73.9584131546998,40.83571149545926,0 -74.01407279298873,40.75650897750999,0 -74.0264997584197,40.69873855007422,0 -74.01220089132732,40.69664520090492,0 </coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

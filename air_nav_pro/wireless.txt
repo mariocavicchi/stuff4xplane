@@ -1,0 +1,8 @@
+ip link set wlan0 down
+iwconfig wlan0 mode ad-hoc
+iwconfig wlan0 key 1234567890
+iwconfig wlan0 channel 1
+iwconfig wlan0 essid 'Mario'
+ip link set wlan0 up
+ip addr add 192.168.69.1/24 dev wlan0
+{"cmd"="getdata"}

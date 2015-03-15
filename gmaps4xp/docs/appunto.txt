@@ -1,0 +1,15 @@
+http://scenery.x-plane.com/library.php?doc=scenery_overview.php
+
+
+LOAD_CENTER
+
+X-PLANE 92): This command estabishes that this texture will be used at a certain location, specified by the lat/lon taken to be the texture's center. By also specifying the textures size (in pixels) and approximate terrain size when placed (in meters), X-Plane will load the texture with variable resolution based on the general distance from the user to the texture. As the user flies, X-plane will periodically reload the texture.
+
+LOAD_CENTER affects loading of the base, night, and composite texturse if they exist. A texture that uses LOAD_CENTER should only be referenced once by one art resource per DSF tile. For optimal performance, the texture should be in DDS format, so that reloads at lower resolution are fast.
+
+    LOAD_CENTER LOAD_CENTER 42.70321 -72.34234 4000 1024 
+
+http://scenery.x-plane.com/library.php?doc=terspec.php
+
+
+http://dwjwhatsnew.blogspot.com/2008/08/squishdds-update-dds-converter-for-os-x.html

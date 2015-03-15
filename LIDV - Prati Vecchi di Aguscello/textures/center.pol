@@ -1,0 +1,8 @@
+A
+850
+DRAPED_POLYGON
+
+LAYER_GROUP airports -1
+TEXTURE_NOWRAP ../textures/center.png
+SCALE 25 25
+

@@ -1,0 +1,2 @@
+gdal_translate -of GTiff -projwin 1298465.94021 5589147.054 1300306.49667 5588091.56073 -outsize 60% 60% gmap.xml gmap.tif
+
